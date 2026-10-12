@@ -88,7 +88,9 @@
   .about{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
   .about p{font-size:16px;color:#4a4038;margin-bottom:14px}
   .about .pill{margin-top:18px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--red);
-    border-radius:12px;padding:16px 20px;font-weight:800;color:var(--red);box-shadow:var(--shadow)}
+    border-radius:12px;padding:16px 20px;font-weight:800;color:var(--red);box-shadow:var(--shadow);
+    font-size:17px;line-height:1.5;display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+  .about .pill .lab{background:var(--red);color:#fff;border-radius:7px;padding:3px 12px;font-size:15px;letter-spacing:.08em}
   .about .shot{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
   .about .shot img{width:100%;height:520px;object-fit:cover;display:block}
 
@@ -195,12 +197,13 @@
     <button class="burger" id="burger" aria-label="菜单">☰</button>
     <nav class="menu" id="navmenu">
       <a href="#about">关于我们</a>
-      <a href="#qual">资质实力</a>
-      <a href="#team">核心团队</a>
-      <a href="#safety">食品安全</a>
+      <a href="#qual">企业资质</a>
       <a href="#menu">菜品菜单</a>
-      <a href="#cases">合作案例</a>
       <a href="#banquet">商务宴请</a>
+      <a href="#supply">采购品牌</a>
+      <a href="#team">核心团队</a>
+      <a href="#cases">合作案例</a>
+      <a href="#safety">食品安全</a>
       <a href="#contact" class="cta">联系我们</a>
     </nav>
   </div>
@@ -243,7 +246,7 @@
       <p>陕西扬友食光餐饮有限公司，专注企事业单位食堂运营、团餐配送与食材供应的一站式餐饮服务商，服务对象覆盖科研办公、工程建设类单位。</p>
       <p>我们提供从食材采购、加工出品到食堂运营的全链条服务，立足西安，依托本地大型农副产品市场与一线品牌供应链，保障食材新鲜、安全、稳定供应。</p>
       <p>服务期间零食品安全事故、零投诉，就餐人员满意度达 95% 以上。</p>
-      <div class="pill">经营理念：保本微利 · 诚信经营 · 安全至上 · 服务贴心</div>
+      <div class="pill"><span class="lab">业务范围</span>单位食堂运营、团餐配送、食材供应、商务宴请服务</div>
     </div>
     <div class="shot reveal"><img src="assets/intro.jpg" alt="自助餐台出品" /></div>
   </div>
@@ -265,99 +268,8 @@
   </div>
 </section>
 
-<!-- TEAM -->
-<section id="team">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">OUR TEAM</span>
-      <h2 class="title">核心团队<span class="en">Our Team</span></h2>
-      <div class="rule"></div>
-    </div>
-    <div class="tbl-wrap reveal" style="margin-top:30px">
-      <table>
-        <thead><tr><th>姓名</th><th>年龄</th><th>职务</th><th>执业资格</th><th>从业年限</th><th>主要工作经历</th></tr></thead>
-        <tbody>
-          <tr><td>王炎</td><td>39</td><td>厨师长</td><td>高级</td><td>15 年</td><td>星级酒店厨师、单位食堂厨师长</td></tr>
-          <tr><td>贺盼盼</td><td>36</td><td>厨师长</td><td>中级</td><td>12 年</td><td>星级酒店厨师、单位食堂主厨</td></tr>
-          <tr><td>佘双玲</td><td>42</td><td>面点厨师长</td><td>中级</td><td>16 年</td><td>星级酒店厨师、单位食堂主厨</td></tr>
-          <tr><td>王迎</td><td>39</td><td>服务管理</td><td>—</td><td>10 年</td><td>单位食堂管理、酒店前堂管理</td></tr>
-          <tr><td>杨金宝</td><td>35</td><td>总经理</td><td>高级</td><td>13 年</td><td>星级酒店厨师长、单位食堂厨师长</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="lead" style="margin-top:18px">核心骨干均具备星级酒店及单位食堂从业背景；总厨师长为食品安全第一责任人，统筹全部岗位。</p>
-  </div>
-</section>
-
-<!-- SAFETY -->
-<section id="safety" style="background:#fff">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">FOOD SAFETY</span>
-      <h2 class="title">食品质量安全保障体系<span class="en">Food Safety System</span></h2>
-      <div class="rule"></div>
-      <p class="lead" style="margin:0 auto">全流程质量管控，落实国家《食品安全法》与《餐饮服务食品安全操作规范》。</p>
-    </div>
-    <div class="cards g3" style="margin-top:38px">
-      <div class="card reveal"><div class="num-badge">01</div><h3>食材质量标准</h3><p>明确新鲜度、规格、产地、保质期，杜绝过期变质与不合格食材。</p></div>
-      <div class="card reveal"><div class="num-badge">02</div><h3>加工质量管控</h3><p>按操作规范清洗、切配、烹饪，严禁添加剂超标与来源不明原料。</p></div>
-      <div class="card reveal"><div class="num-badge">03</div><h3>成品质量检验</h3><p>每批次成品感官与卫生检验合格后方可上桌，不合格立即销毁。</p></div>
-      <div class="card reveal"><div class="num-badge">04</div><h3>食材采购管理</h3><p>索证索票、进货查验，建立台账，来源可追溯、票物相符。</p></div>
-      <div class="card reveal"><div class="num-badge">05</div><h3>安全执行标准</h3><p>岗位安全操作要求明确，上墙公示、日常检查、动态更新。</p></div>
-      <div class="card reveal"><div class="num-badge">06</div><h3>检验检查措施</h3><p>食材验收、加工过程、成品三道检验，每月联合第三方专项检测。</p></div>
-    </div>
-    <div class="cards g3" style="margin-top:22px">
-      <div class="card reveal"><div class="ico">洁</div><h3>厨具餐具</h3><p>一刮、二洗、三冲、四消毒、五保洁；专用保洁柜存放，定期抽样检验。</p></div>
-      <div class="card reveal"><div class="ico">境</div><h3>餐厅环境</h3><p>每日餐前餐后清洁，高频部位消毒，每周全面消杀，垃圾日产日清。</p></div>
-      <div class="card reveal"><div class="ico">鲜</div><h3>食品与留样</h3><p>生熟分开、荤素分开、控温储存；每批次留样 ≥125g，冷藏保存 48 小时以上。</p></div>
-    </div>
-    <div class="subhead reveal" style="margin-top:34px">检验检测报告（抽样）</div>
-    <div class="reports reveal">
-      <img src="assets/inspect-report-1.png" alt="检验报告" data-lb>
-      <img src="assets/inspect-report-2.png" alt="检验报告" data-lb>
-      <img src="assets/inspect-report-3.png" alt="检验结果表" data-lb>
-      <img src="assets/supplier-permit.png" alt="食品生产许可证" data-lb>
-    </div>
-  </div>
-</section>
-
-<!-- SUPPLY -->
-<section id="supply">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">SOURCING &amp; BRANDS</span>
-      <h2 class="title">食材采购渠道与品牌合作<span class="en">Sourcing &amp; Partners</span></h2>
-      <div class="rule"></div>
-      <p class="lead" style="margin:0 auto">立足西安本地三大核心农副产品市场集中采购，三大市场资质齐全、货源充足、冷链及溯源体系完善。</p>
-    </div>
-    <div class="cards g3" style="margin-top:36px">
-      <div class="card reveal"><div class="ico">1</div><h3>西安西部欣桥</h3><p>农产品物流中心，蔬菜、肉禽、水产、干货集中直采。</p></div>
-      <div class="card reveal"><div class="ico">2</div><h3>朱雀农副产品</h3><p>物流中心，货源充足、品质稳定、冷链完善。</p></div>
-      <div class="card reveal"><div class="ico">3</div><h3>雨润全球采购</h3><p>西安农副产品全球采购中心，品类齐全、供应准时。</p></div>
-    </div>
-
-    <div class="subhead reveal">粮油合作品牌（米 · 面 · 油）</div>
-    <div class="brands reveal">
-      <div class="b"><img src="assets/brand-aiju-oil.png" alt="爱菊 菜籽油"></div>
-      <div class="b"><img src="assets/brand-aiju-rice.jpg" alt="爱菊 大米"></div>
-      <div class="b"><img src="assets/brand-aiju-flour.png" alt="爱菊 小麦粉"></div>
-      <div class="b"><img src="assets/brand-jinlong-oil.png" alt="金龙鱼 食用油"></div>
-      <div class="b"><img src="assets/brand-jinlong-rice.png" alt="金龙鱼 大米"></div>
-      <div class="b"><img src="assets/brand-jinlong-flour.png" alt="金龙鱼 小麦粉"></div>
-    </div>
-
-    <div class="subhead reveal">调味品合作品牌（海天 · 李锦记 · 家乐）</div>
-    <div class="brands reveal">
-      <div class="b"><img src="assets/brand-seasoning-1.png" alt="调味品"></div>
-      <div class="b"><img src="assets/brand-seasoning-2.png" alt="酱油 料酒"></div>
-      <div class="b"><img src="assets/brand-seasoning-3.png" alt="调味品"></div>
-    </div>
-    <p class="lead reveal" style="margin-top:20px">所有产品均从正规授权渠道采购，具备合格检验报告及相关资质，杜绝杂牌、劣质产品。</p>
-  </div>
-</section>
-
 <!-- MENU -->
-<section id="menu" style="background:#fff">
+<section id="menu">
   <div class="wrap">
     <div class="center reveal">
       <span class="eyebrow">MENU &amp; NUTRITION</span>
@@ -464,55 +376,8 @@
   </div>
 </section>
 
-<!-- EMERGENCY -->
-<section id="emergency">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">EMERGENCY</span>
-      <h2 class="title">应急保障体系<span class="en">Emergency Response</span></h2>
-      <div class="rule"></div>
-      <p class="lead" style="margin:0 auto">明确报告流程、处置措施与责任追溯，定期组织应急演练，突发事件快速响应、妥善处置。</p>
-    </div>
-    <div class="cards g3" style="margin-top:36px">
-      <div class="card reveal"><div class="num-badge">01</div><h3>停水应急预案</h3><p>关闭阀门、启用储备用水、保障基本就餐与食材安全。</p></div>
-      <div class="card reveal"><div class="num-badge">02</div><h3>停电应急预案</h3><p>停用电器、维持冷链温度、启用应急照明与备用供餐。</p></div>
-      <div class="card reveal"><div class="num-badge">03</div><h3>停燃气应急预案</h3><p>切断气源、加强通风、调整供餐方式、检漏后恢复。</p></div>
-      <div class="card reveal"><div class="num-badge">04</div><h3>消防安全应急预案</h3><p>切断电源气源、初期处置、有序疏散、配合检查整改。</p></div>
-      <div class="card reveal"><div class="num-badge">05</div><h3>食品安全事故预案</h3><p>停止供餐、封存留样、救助排查、消杀整改后复供。</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CASES -->
-<section id="cases" style="background:#fff">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">CASE STUDIES</span>
-      <h2 class="title">合作案例 · 项目业绩<span class="en">Case Studies</span></h2>
-      <div class="rule"></div>
-    </div>
-    <div class="tbl-wrap reveal" style="margin-top:30px">
-      <table>
-        <thead><tr><th>项目名称</th><th>金额</th><th>服务期间</th><th>业主单位</th></tr></thead>
-        <tbody>
-          <tr><td>单位职工食堂承包</td><td>3.4 万元 / 月</td><td>2022.04 - 至今</td><td>某股份公司</td></tr>
-          <tr><td>食材采购配送项目</td><td>50 万元</td><td>2026.04.30</td><td>某项目部</td></tr>
-          <tr><td>师生食堂</td><td>10 万元 / 月</td><td>2020.07 - 2025.07</td><td>某补习学校</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="gal reveal" style="margin-top:26px;grid-template-columns:repeat(4,1fr)">
-      <figure data-lb><img src="assets/case-kitchen.jpg" alt="标准化后厨"><figcaption>标准化后厨</figcaption></figure>
-      <figure data-lb><img src="assets/case-dining.jpg" alt="舒适就餐环境"><figcaption>舒适就餐环境</figcaption></figure>
-      <figure data-lb><img src="assets/case-dishes.png" alt="营养出品"><figcaption>营养出品</figcaption></figure>
-      <figure data-lb><img src="assets/case-baozi.jpg" alt="面点制作"><figcaption>面点制作</figcaption></figure>
-    </div>
-    <p class="lead reveal" style="margin-top:20px;color:var(--red);font-weight:700">服务期间零食品安全事故、零服务投诉，就餐人员满意度均达 95% 以上。</p>
-  </div>
-</section>
-
 <!-- BANQUET -->
-<section id="banquet">
+<section id="banquet" style="background:#fff">
   <div class="wrap">
     <div class="center reveal">
       <span class="eyebrow">BUSINESS BANQUET</span>
@@ -540,13 +405,162 @@
       <figure data-lb><img src="assets/dish-bowls.jpg" alt="小菜"><figcaption>开胃小菜 · 精致爽口</figcaption></figure>
       <figure data-lb><img src="assets/dish-dessert.jpg" alt="甜品"><figcaption>甜品呈现 · 收尾讲究</figcaption></figure>
     </div>
-    <div class="subhead reveal" style="margin-top:40px">企业管理制度体系</div>
-    <div class="cards g3 reveal">
-      <div class="card"><div class="num-badge">01</div><h3>食品安全管理制度</h3></div>
-      <div class="card"><div class="num-badge">02</div><h3>人员管理制度</h3></div>
-      <div class="card"><div class="num-badge">03</div><h3>运营服务管理制度</h3></div>
-      <div class="card"><div class="num-badge">04</div><h3>物资采购管理制度</h3></div>
-      <div class="card"><div class="num-badge">05</div><h3>应急处置管理制度</h3></div>
+  </div>
+</section>
+
+<!-- SUPPLY -->
+<section id="supply">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">SOURCING &amp; BRANDS</span>
+      <h2 class="title">食材采购渠道与品牌合作<span class="en">Sourcing &amp; Partners</span></h2>
+      <div class="rule"></div>
+      <p class="lead" style="margin:0 auto">立足西安本地三大核心农副产品市场集中采购，三大市场资质齐全、货源充足、冷链及溯源体系完善。</p>
+    </div>
+    <div class="cards g3" style="margin-top:36px">
+      <div class="card reveal"><div class="ico">1</div><h3>西安西部欣桥</h3><p>农产品物流中心，蔬菜、肉禽、水产、干货集中直采。</p></div>
+      <div class="card reveal"><div class="ico">2</div><h3>朱雀农副产品</h3><p>物流中心，货源充足、品质稳定、冷链完善。</p></div>
+      <div class="card reveal"><div class="ico">3</div><h3>雨润全球采购</h3><p>西安农副产品全球采购中心，品类齐全、供应准时。</p></div>
+    </div>
+
+    <div class="subhead reveal">粮油合作品牌（米 · 面 · 油）</div>
+    <div class="brands reveal">
+      <div class="b"><img src="assets/brand-aiju-oil.png" alt="爱菊 菜籽油"></div>
+      <div class="b"><img src="assets/brand-aiju-rice.jpg" alt="爱菊 大米"></div>
+      <div class="b"><img src="assets/brand-aiju-flour.png" alt="爱菊 小麦粉"></div>
+      <div class="b"><img src="assets/brand-jinlong-oil.png" alt="金龙鱼 食用油"></div>
+      <div class="b"><img src="assets/brand-jinlong-rice.png" alt="金龙鱼 大米"></div>
+      <div class="b"><img src="assets/brand-jinlong-flour.png" alt="金龙鱼 小麦粉"></div>
+    </div>
+
+    <div class="subhead reveal">调味品合作品牌（海天 · 李锦记 · 家乐）</div>
+    <div class="brands reveal">
+      <div class="b"><img src="assets/brand-seasoning-1.png" alt="调味品"></div>
+      <div class="b"><img src="assets/brand-seasoning-2.png" alt="酱油 料酒"></div>
+      <div class="b"><img src="assets/brand-seasoning-3.png" alt="调味品"></div>
+    </div>
+    <p class="lead reveal" style="margin-top:20px">所有产品均从正规授权渠道采购，具备合格检验报告及相关资质，杜绝杂牌、劣质产品。</p>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" style="background:#fff">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">OUR TEAM</span>
+      <h2 class="title">核心团队<span class="en">Our Team</span></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="tbl-wrap reveal" style="margin-top:30px">
+      <table>
+        <thead><tr><th>姓名</th><th>年龄</th><th>职务</th><th>执业资格</th><th>从业年限</th><th>主要工作经历</th></tr></thead>
+        <tbody>
+          <tr><td>王炎</td><td>39</td><td>厨师长</td><td>高级</td><td>15 年</td><td>星级酒店厨师、单位食堂厨师长</td></tr>
+          <tr><td>贺盼盼</td><td>36</td><td>厨师长</td><td>中级</td><td>12 年</td><td>星级酒店厨师、单位食堂主厨</td></tr>
+          <tr><td>佘双玲</td><td>42</td><td>面点厨师长</td><td>中级</td><td>16 年</td><td>星级酒店厨师、单位食堂主厨</td></tr>
+          <tr><td>王迎</td><td>39</td><td>服务管理</td><td>—</td><td>10 年</td><td>单位食堂管理、酒店前堂管理</td></tr>
+          <tr><td>杨金宝</td><td>35</td><td>总经理</td><td>高级</td><td>13 年</td><td>星级酒店厨师长、单位食堂厨师长</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lead" style="margin-top:18px">核心骨干均具备星级酒店及单位食堂从业背景；总厨师长为食品安全第一责任人，统筹全部岗位。</p>
+  </div>
+</section>
+
+<!-- CASES -->
+<section id="cases">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">CASE STUDIES</span>
+      <h2 class="title">合作案例 · 项目业绩<span class="en">Case Studies</span></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="tbl-wrap reveal" style="margin-top:30px">
+      <table>
+        <thead><tr><th>项目名称</th><th>金额</th><th>服务期间</th><th>业主单位</th></tr></thead>
+        <tbody>
+          <tr><td>单位职工食堂承包</td><td>3.4 万元 / 月</td><td>2022.04 - 至今</td><td>某股份公司</td></tr>
+          <tr><td>食材采购配送项目</td><td>50 万元</td><td>2026.04.30</td><td>某项目部</td></tr>
+          <tr><td>师生食堂</td><td>10 万元 / 月</td><td>2020.07 - 2025.07</td><td>某补习学校</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="gal reveal" style="margin-top:26px;grid-template-columns:repeat(4,1fr)">
+      <figure data-lb><img src="assets/case-kitchen.jpg" alt="标准化后厨"><figcaption>标准化后厨</figcaption></figure>
+      <figure data-lb><img src="assets/case-dining.jpg" alt="舒适就餐环境"><figcaption>舒适就餐环境</figcaption></figure>
+      <figure data-lb><img src="assets/case-dishes.png" alt="营养出品"><figcaption>营养出品</figcaption></figure>
+      <figure data-lb><img src="assets/case-baozi.jpg" alt="面点制作"><figcaption>面点制作</figcaption></figure>
+    </div>
+    <p class="lead reveal" style="margin-top:20px;color:var(--red);font-weight:700">服务期间零食品安全事故、零服务投诉，就餐人员满意度均达 95% 以上。</p>
+  </div>
+</section>
+
+<!-- SAFETY -->
+<section id="safety" style="background:#fff">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">FOOD SAFETY</span>
+      <h2 class="title">食品质量安全保障体系<span class="en">Food Safety System</span></h2>
+      <div class="rule"></div>
+      <p class="lead" style="margin:0 auto">全流程质量管控，落实国家《食品安全法》与《餐饮服务食品安全操作规范》。</p>
+    </div>
+    <div class="cards g3" style="margin-top:38px">
+      <div class="card reveal"><div class="num-badge">01</div><h3>食材质量标准</h3><p>明确新鲜度、规格、产地、保质期，杜绝过期变质与不合格食材。</p></div>
+      <div class="card reveal"><div class="num-badge">02</div><h3>加工质量管控</h3><p>按操作规范清洗、切配、烹饪，严禁添加剂超标与来源不明原料。</p></div>
+      <div class="card reveal"><div class="num-badge">03</div><h3>成品质量检验</h3><p>每批次成品感官与卫生检验合格后方可上桌，不合格立即销毁。</p></div>
+      <div class="card reveal"><div class="num-badge">04</div><h3>食材采购管理</h3><p>索证索票、进货查验，建立台账，来源可追溯、票物相符。</p></div>
+      <div class="card reveal"><div class="num-badge">05</div><h3>安全执行标准</h3><p>岗位安全操作要求明确，上墙公示、日常检查、动态更新。</p></div>
+      <div class="card reveal"><div class="num-badge">06</div><h3>检验检查措施</h3><p>食材验收、加工过程、成品三道检验，每月联合第三方专项检测。</p></div>
+    </div>
+    <div class="cards g3" style="margin-top:22px">
+      <div class="card reveal"><div class="ico">洁</div><h3>厨具餐具</h3><p>一刮、二洗、三冲、四消毒、五保洁；专用保洁柜存放，定期抽样检验。</p></div>
+      <div class="card reveal"><div class="ico">境</div><h3>餐厅环境</h3><p>每日餐前餐后清洁，高频部位消毒，每周全面消杀，垃圾日产日清。</p></div>
+      <div class="card reveal"><div class="ico">鲜</div><h3>食品与留样</h3><p>生熟分开、荤素分开、控温储存；每批次留样 ≥125g，冷藏保存 48 小时以上。</p></div>
+    </div>
+    <div class="subhead reveal" style="margin-top:34px">检验检测报告（抽样）</div>
+    <div class="reports reveal">
+      <img src="assets/inspect-report-1.png" alt="检验报告" data-lb>
+      <img src="assets/inspect-report-2.png" alt="检验报告" data-lb>
+      <img src="assets/inspect-report-3.png" alt="检验结果表" data-lb>
+      <img src="assets/supplier-permit.png" alt="食品生产许可证" data-lb>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY -->
+<section id="emergency">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">EMERGENCY</span>
+      <h2 class="title">应急保障体系<span class="en">Emergency Response</span></h2>
+      <div class="rule"></div>
+      <p class="lead" style="margin:0 auto">明确报告流程、处置措施与责任追溯，定期组织应急演练，突发事件快速响应、妥善处置。</p>
+    </div>
+    <div class="cards g3" style="margin-top:36px">
+      <div class="card reveal"><div class="num-badge">01</div><h3>停水应急预案</h3><p>关闭阀门、启用储备用水、保障基本就餐与食材安全。</p></div>
+      <div class="card reveal"><div class="num-badge">02</div><h3>停电应急预案</h3><p>停用电器、维持冷链温度、启用应急照明与备用供餐。</p></div>
+      <div class="card reveal"><div class="num-badge">03</div><h3>停燃气应急预案</h3><p>切断气源、加强通风、调整供餐方式、检漏后恢复。</p></div>
+      <div class="card reveal"><div class="num-badge">04</div><h3>消防安全应急预案</h3><p>切断电源气源、初期处置、有序疏散、配合检查整改。</p></div>
+      <div class="card reveal"><div class="num-badge">05</div><h3>食品安全事故预案</h3><p>停止供餐、封存留样、救助排查、消杀整改后复供。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MANAGEMENT -->
+<section id="management" style="background:#fff">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">MANAGEMENT SYSTEM</span>
+      <h2 class="title">企业管理制度体系<span class="en">Management System</span></h2>
+      <div class="rule"></div>
+      <p class="lead" style="margin:0 auto">制度上墙公示、落地执行，做到各项工作有章可循、有据可查。</p>
+    </div>
+    <div class="cards g3" style="margin-top:36px">
+      <div class="card reveal"><div class="num-badge">01</div><h3>食品安全管理制度</h3></div>
+      <div class="card reveal"><div class="num-badge">02</div><h3>人员管理制度</h3></div>
+      <div class="card reveal"><div class="num-badge">03</div><h3>运营服务管理制度</h3></div>
+      <div class="card reveal"><div class="num-badge">04</div><h3>物资采购管理制度</h3></div>
+      <div class="card reveal"><div class="num-badge">05</div><h3>应急处置管理制度</h3></div>
     </div>
     <div class="gal reveal" style="margin-top:22px;grid-template-columns:repeat(3,1fr)">
       <figure data-lb><img src="assets/sys-board.png" alt="制度上墙"><figcaption>制度上墙公示</figcaption></figure>
